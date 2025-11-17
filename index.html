@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HandiNews - Accueil</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body style="background-color: #c1e8ff; color: #190019">
+    <!-- Header inclus -->
+    <div data-include="components/header.html"></div>
+
+    <!-- HERO SECTION -->
+    <section
+      class="container py-5 d-flex flex-column flex-md-row align-items-center justify-content-between"
+    >
+      <!-- Left content -->
+      <div class="col-md-6">
+        <h1 class="fw-bold mb-4" style="color: #190019">
+          Suivez l'actualité du handicap et de l'innovation en temps réel
+        </h1>
+        <div class="d-flex gap-3">
+          <a
+            href="#"
+            class="btn btn-primary px-4"
+            style="background-color: #3b82c4; border: none"
+            >Nous suivre</a
+          >
+          <a
+            href="#"
+            class="btn btn-outline-dark px-4"
+            style="border-color: #637658; color: #bdb64d"
+            >Connexion</a
+          >
+        </div>
+      </div>
+
+      <!-- Right: phone image with animated background -->
+      <div class="col-md-5 text-center position-relative mt-4 mt-md-0">
+        <div
+          class="bg-animation position-absolute w-100 h-100"
+          style="top: 0; left: 0; z-index: -1"
+        ></div>
+        <img
+          src="assets/pictures/phone01 (1).png"
+          alt="Téléphone"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="assets/img/about.png"
+            class="img-fluid rounded"
+            alt="À propos"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3" style="color: #190019">
+            À propos de HandiNews
+          </h2>
+          <p>
+            HandiNews est une plateforme dédiée à la diffusion en temps réel des
+            actualités, innovations et initiatives autour du handicap. Notre
+            mission est de rendre l'information plus accessible, visible et
+            engageante.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INNOVATION ACTORS SECTION -->
+    <section class="container py-5">
+      <h2 class="fw-bold text-center mb-5" style="color: #190019">
+        Les Acteurs De L'Innovation SSH
+      </h2>
+      <div class="row g-4">
+        <!-- Card Example 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0" style="border-radius: 12px">
+            <img
+              src="assets/img/company1.png"
+              class="card-img-top"
+              alt="Entreprise 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Entreprise 1</h5>
+              <p class="card-text">
+                Innovation : Prothèse intelligente connectée
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Example 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0" style="border-radius: 12px">
+            <img
+              src="assets/img/company2.png"
+              class="card-img-top"
+              alt="Entreprise 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Entreprise 2</h5>
+              <p class="card-text">
+                Innovation : Application d'accessibilité avancée
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Example 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0" style="border-radius: 12px">
+            <img
+              src="assets/img/company3.png"
+              class="card-img-top"
+              alt="Entreprise 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Entreprise 3</h5>
+              <p class="card-text">
+                Innovation : Matériel de mobilité nouvelle génération
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SUBSCRIPTION SECTION -->
+    <section
+      class="container py-5 d-flex flex-column flex-md-row align-items-center justify-content-between"
+    >
+      <!-- Form -->
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-4" style="color: #190019">
+          Recevez nos articles en temps réel
+        </h2>
+        <form class="p-4 shadow-sm bg-white rounded">
+          <div class="mb-3">
+            <label class="form-label">Nom</label>
+            <input type="text" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <button
+            class="btn w-100"
+            style="background-color: #3b82c4; color: white"
+          >
+            S'abonner
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: phone illustration -->
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <img
+          src="assets/img/phone_subscribe.png"
+          alt="Téléphone"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- Footer inclus -->
+    <div data-include="components/footer.html"></div>
+
+    <script src="assets/js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
