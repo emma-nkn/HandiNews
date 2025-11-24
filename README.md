@@ -1,30 +1,42 @@
-# 🌐 HandiNews – Application de Newsletter en Temps Réel
+HandiNews – Application de Newsletter en Temps Réel
 
-HandiNews est une application web full-stack qui diffuse en temps réel des articles sur le handicap et les innovations dans ce domaine.  
-Les utilisateurs peuvent s’abonner à une newsletter afin de recevoir régulièrement un résumé des meilleures actualités.  
-L'application comprend également une interface d’administration permettant de gérer les abonnés.
+Projet Full Stack JavaScript – Étudiante en Bachelor Développement Web & Mobile
 
----
+HandiNews est une application web qui diffuse en temps réel des articles sur le handicap et les innovations dans ce domaine.
+Les utilisateurs peuvent s’abonner à une newsletter intelligente qui envoie automatiquement un résumé des nouvelles actualités.
+L’application comprend également une interface d’administration permettant de gérer les abonnés.
 
-## 📌 Objectifs du projet
+## ✨ Objectifs du projet
 
-- Informer sur le handicap et les innovations accessibles.
-- Offrir un service de newsletter simple et automatisé.
-- Permettre à un administrateur de gérer les abonnés.
-- Mettre en pratique un stack JavaScript complet : **Front-end + Back-end**.
-- Développer un projet professionnel en respectant les bonnes pratiques (MVC, API REST, documentation…).
+Informer sur le handicap et les innovations inclusives.
 
----
+Proposer une newsletter automatisée pour faciliter l’accès à l’information.
 
-## Architecture du projet
+Créer une API REST complète avec Node.js & Express.
+
+Mettre en place une base de données MySQL.
+
+Pratiquer un workflow professionnel : MVC, documentation, organisation du code.
+
+Développer un vrai projet vitrine .
+
+#### 🗂 Architecture du projet
 
 HandiNews/
 │
 ├── frontend/
-│ ├── index.html
-│ ├── articles.html
-│ ├── admin.html
-│ └── main.js
+│ ├── public/
+│ │ ├── index.html
+│ │ ├── articles.html
+│ │ └── admin.html
+│ │
+│ ├── src/
+│ │ ├── css/
+│ │ ├── js/
+│ │ │ └── main.js
+│ │ └── assets/
+│ │
+│ └── README.md
 │
 ├── backend/
 │ ├── server.js
@@ -34,104 +46,139 @@ HandiNews/
 │ ├── controllers/
 │ │ ├── articlesController.js
 │ │ └── newsletterController.js
-│ ├── database/
-│ │ └── connection.js
-│ └── cron/
-│ └── sendNewsletter.js
+│ ├── config/
+│ │ └── db.js
+│ ├── cron/
+│ │ └── sendNewsletter.js
+│ └── .env
 │
 └── README.md
 
-## 🚀 Fonctionnalités principales
+#### 🚀 Fonctionnalités
 
-### 👨‍💻 Côté utilisateur (Front-end)
+## 👨‍💻 Front-end (Utilisateur)
 
-- Consultation d’articles mis à jour en temps réel.
-- Interface responsive en **Bootstrap 5**.
-- Formulaire d’abonnement à la newsletter.
-- Confirmation d’inscription.
+Interface simple, responsive et accessible (Bootstrap 5).
 
-### 🛠 Côté serveur (Back-end)
+Liste des articles mis à jour en temps réel.
 
-- API REST en **Node.js + Express**.
-- Routes :
-  - `GET /articles` → récupérer les articles
-  - `POST /subscribe` → ajouter un abonné
-  - `GET /subscribers` → voir les abonnés
-  - `DELETE /subscribers/:id` → supprimer un abonné
-- Validation des emails et gestion des erreurs.
-- Connexion à une base **MySQL**.
+Formulaire d’inscription à la newsletter.
 
-### ✉️ Automatisation newsletter
+Message de confirmation (succès / erreur).
 
-- Envoi d’emails via **Nodemailer**.
-- Template email HTML personnalisé.
-- Tâche automatique programmée via **node-cron**.
+## Back-end (Serveur & API)
 
-### 🔐 Back-office admin
+API REST (Express.js)
 
-- Liste des abonnés
-- Suppression d’un abonné
-- Interface Bootstrap simple
+GET /api/articles → récupérer les articles
 
----
+POST /api/newsletter/subscribe → ajouter un abonné
+
+GET /api/subscribers → liste des abonnés
+
+DELETE /api/subscribers/:id → supprimer un abonné
+
+#### Autres fonctionnalités
+
+Connexion à MySQL avec mysql2
+
+Validation des emails
+
+Séparation routes / contrôleurs / config
+
+## ✉️ Automatisation de la newsletter
+
+Envoi d’emails via Nodemailer
+
+Templates HTML personnalisés
+
+Tâches automatiques (cron job) pour envoyer les newsletters selon la fréquence choisie
+
+## 🔐 Back-office administrateur
+
+Affichage de la liste des abonnés
+
+Suppression d’un abonné
+
+Interface en Bootstrap
 
 ## 🧰 Technologies utilisées
 
-### Front-end :
+## Front-end
 
-- HTML5
-- CSS3
-- JavaScript ES6
-- **Bootstrap 5**
+HTML5, CSS3, JavaScript ES6
 
-### Back-end :
+Bootstrap 5
 
-- Node.js
-- Express.js
-- Nodemailer
-- node-cron
+## Back-end
 
-### Base de données :
+Node.js
 
-- MySQL / MariaDB
+Express.js
 
-### Outils :
+Nodemailer
 
-- Git & GitHub
-- Postman
-- VS Code
+node-cron
 
----
+## Base de données
 
-## Plan de développement (Roadmap)
+MySQL / MariaDB
 
-<!-- Sprint 1 : Front-end -->
+phpMyAdmin
 
-Maquette Bootstrap
-Pages HTML
-Consommer l’API des articles
+## Outils de développement
 
-<!-- Sprint 2 : Back-end -->
+Git & GitHub
 
-Setup Express
-Routes API
-Connexion MySQL
+VS Code
 
-<!-- Sprint 3 : Newsletter -->
+Postman
 
-Envoi mail
-Template HTML
-Cron job
+#### 🗺 Roadmap
 
-<!-- Sprint 4 : Admin & Finition -->
+## Phase 1 – Architecture & Setup
 
-Page admin
-Debug & tests
-Hébergement
+Initialisation backend + frontend
 
-## Installation du projet
+Configuration MySQL
 
-git clone ...
+Structure MVC
+
+## Phase 2 – Création des pages
+
+Listing des articles
+
+Mise en forme Bootstrap
+
+API GET articles
+
+## Phase 3 – Newsletter
+
+Création des abonnés
+
+Automatisation des emails
+
+Cron (envoi régulier)
+
+## Phase 4 – Back-office admin
+
+Consultation et suppression des abonnés
+
+Mise en place des routes sécurisées
+
+## Phase 5 – Accessibilité
+
+Navigation clavier
+
+Contraste élevé
+
+Labels ARIA
+
+Taille du texte ajustable
+
+#### 📦 Installation du projet (local)
+
+## 1️⃣ Cloner le projet
+
+git clone https://github.com/emma-nkn/HandiNews.git
 cd HandiNews
-npm install
-npm start
