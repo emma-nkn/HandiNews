@@ -1,0 +1,16 @@
+/* Application générale à tout le corps du texte */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Application spécifique aux titres */
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+header nav a {
+  font-weight: 600; /* Semi-gras pour les liens du menu */
+}
