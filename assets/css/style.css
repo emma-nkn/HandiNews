@@ -14,3 +14,143 @@ h3 {
 header nav a {
   font-weight: 600; /* Semi-gras pour les liens du menu */
 }
+/*================================ fichier html session a_propos =====================*/
+
+#a_propos {
+  margin: 40px 0px;
+  /* width: 90%; */
+  height: 450px;
+  background-color: white;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 0px 15px;
+}
+/*================================================*/
+#a_propos .container_imag {
+  margin-top: 100px;
+  margin-left: 40px;
+  padding-left: 40px;
+  width: 200px;
+  text-align: center;
+}
+#a_propos .container_imag img {
+  margin-left: 40px;
+  border: 2px solid #ffc107;
+  background-color: #ffc107;
+  border-radius: 50%;
+}
+#a_propos .item_post_rignt {
+  /* position: absolute;
+  right: 6%; */
+  margin-left: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#a_propos .item_post_rignt h3 {
+  color: #ffc107;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: overline;
+}
+/*================================================*/
+#a_propos .item_post_rignt .card-cntainer1 {
+  position: relative;
+  width: 380px;
+  height: 540px;
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.item_post_rignt .card-cntainer1 ul {
+  position: absolute;
+  top: 30%;
+  font-size: 15px;
+}
+.card-cntainer1 p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-cntainer1 ul li {
+  list-style: disc; /* Maintient le style de puce */
+}
+
+.card-cntainer1 ul li::marker {
+  color: #ffc107;
+  font-size: 1.3em;
+}
+.item_post_rignt .card-cntainer1 .cadre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 60%;
+}
+.item_post_rignt .card-cntainer1 .cadre1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+.item_post_rignt .card-cntainer1 .cadre p {
+  border: 2px solid white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.item_post_rignt .card-cntainer1 .cadre p:hover {
+  border: 2px solid white;
+  background-color: #ffc107;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.item_post_rignt .card-cntainer1 .cadre1 p {
+  text-align: center;
+  font-size: 15px;
+  width: 120px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.item_post_rignt .card-cntainer1 .cadre1 p:hover {
+  border: 2px solid white;
+  background-color: #ffc107;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+/*================================================*/
+#a_propos .item_post_rignt .card-cntainer {
+  position: relative;
+  width: 380px;
+  height: 540px;
+  color: white;
+  /* border: 2px solid red; */
+  background-color: #0d6efd;
+  padding: 8px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.item_post_rignt .card-cntainer p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.item_post_rignt .card-cntainer .cadre2 {
+  position: absolute;
+  top: 40%;
+  border: 2px solid red;
+}
+.item_post_rignt .card-cntainer .cadre2 p {
+  background-color: white;
+  border-radius: 3px;
+  padding: 5px;
+  color: #0d6efd;
+  font-size: 15px;
+  font-weight: 400;
+}

@@ -46,10 +46,17 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="container py-5">
-      <div class="text_imag"></div>
+    <section class="" id="a_propos">
+      <div class="container_imag">
+        <!-- <p>
+          Votre source d'information fiable sur le handicap et l'innovation
+          inclusive.
+        </p> -->
+
+        <img src="assets/pictures/gimage.png" alt="" width="190px" />
+      </div>
       <div class="item_post_rignt">
-        <div>
+        <div class="card-cntainer1">
           <h3>NOTRE MISSION</h3>
           <br />
           <p>HandiNews partage des articles sélectionnés sur :</p>
@@ -59,34 +66,162 @@
             <li>les avancées médicales,</li>
             <li>les projets inclusifs.</li>
           </ul>
-          <div class="row">
-            <div><p>Informer</p></div>
-            <div><p>Sensibiliser</p></div>
-            <div><p>connecter</p></div>
+          <div class="cadre">
+            <p>Informer</p>
+            <p>Sensibiliser</p>
+            <p>connecter</p>
           </div>
-          <div class="row">
+          <div class="cadre1">
             <div><p>Comprendre</p></div>
             <div><p>Partager</p></div>
           </div>
         </div>
-        <div>
+        <div class="card-cntainer">
           <h3>POUR QUI?</h3>
           <br />
           <p>
-            Toutes les personnes qui souhaitent comprendre, faire avancer ou
-            transformer l’innovation au service du handicap. Notre plateforme a
-            été pensée pour être utile, accessible et inspirante pour plusieurs
-            types de publics :
+            Notre plateforme a été pensée pour être utile, accessible et
+            inspirante pour plusieurs types de publics :
           </p>
-          <div>
-            <p>Les personnes en situation de handicap</p>
-            <p>Les familles et les aidants</p>
-            <p>Professionnels de la santé, du social et ...</p>
-            <p>Développeurs et passionnés d’innovation</p>
-            <p>Entreprises, startups et acteurs de l’innovation</p>
+          <div class="accordion" id="accordionPublicsCibles">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <i class="bi bi-person-wheelchair me-3 fs-2 text-info"></i>
+                  Personnes en situation de handicap
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionPublicsCibles"
+              >
+                <div class="accordion-body small">
+                  Pour accéder facilement à des informations fiables, découvrir
+                  des outils numériques adaptés, suivre les dernières avancées
+                  technologiques et trouver des solutions concrètes pour
+                  faciliter le quotidien.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bi bi-people-fill me-3 fs-2 text-info"></i> Les
+                  familles et les aidants
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionPublicsCibles"
+              >
+                <div class="accordion-body small">
+                  Parce qu’accompagner un proche demande du temps, de l’énergie
+                  et des ressources, HandiNews rassemble des actualités, des
+                  conseils pratiques et des innovations qui peuvent réellement
+                  changer la vie des familles.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bi bi-people-fill me-3 fs-2 text-info"></i>
+                  Développeurs et passionnés d'innovation
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionPublicsCibles"
+              >
+                <div class="accordion-body small">
+                  Ceux qui veulent se former, créer, imaginer et contribuer à la
+                  révolution numérique inclusive. HandiNews leur offre un espace
+                  de veille technologique et de découverte pour nourrir leurs
+                  projets.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bi bi-people-fill me-3 fs-2 text-info"></i>
+                  Professionnels de la santé, du social...
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionPublicsCibles"
+              >
+                <div class="accordion-body small">
+                  <strong>Détails :</strong> Trouvez des informations sur les
+                  projets inclusifs, les actualités sociales et les ressources
+                  pour soutenir les personnes dont vous vous occupez.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bi bi-people-fill me-3 fs-2 text-info"></i>
+                  Entreprises, startups et acteurs de l’innovation
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionPublicsCibles"
+              >
+                <div class="accordion-body small">
+                  Pour valoriser leurs travaux, découvrir les tendances du
+                  marché, comprendre les besoins des utilisateurs et renforcer
+                  leur engagement en faveur de l’accessibilité et de
+                  l’inclusion.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button><a href="">Nous suivre</a></button>
       </div>
     </section>
 
