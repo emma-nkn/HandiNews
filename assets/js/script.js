@@ -1,6 +1,6 @@
 new Swiper(" .card-wrapper", {
   loop: true,
-  spaceBetween: 50,
+  spaceBetween: 40,
   slidesPerView: 3,
 
   pagination: {
