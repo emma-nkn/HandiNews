@@ -1,6 +1,29 @@
-footer .foot-bg {
-  background: #0d6efd;
+:root {
+  --bs-primary: #0d6efd; /* Votre bleu pour bg-primary */
+  --bs-warning: #ffc107; /* Votre jaune pour les icônes */
 }
 
- {
+/* Effet de survol pour les liens de navigation (Blanc par défaut -> Jaune au survol) */
+#pied_depage .hover-link {
+  transition: color 0.3s ease;
+}
+
+#pied_depage .hover-link:hover {
+  color: var(--bs-warning) !important; /* Couleur jaune */
+}
+
+/* Effet de survol pour les icônes sociales (Jaune par défaut -> Blanc au survol) */
+#pied_depage .hover-social {
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+
+#pied_depage .hover-social:hover {
+  color: white !important;
+}
+
+@media (max-width: 767.98px) {
+  /* Sur mobile, assurez-vous que les blocs soient bien centrés et espacés verticalement */
+  #pied_depage .row > div {
+    margin-bottom: 1rem;
+  }
 }
