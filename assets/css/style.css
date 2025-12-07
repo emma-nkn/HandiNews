@@ -81,10 +81,7 @@ header nav a {
 }
 
 /*================================ fichier html session innovation =====================*/
-/* 
-.card-list {
-  background-color: white;
-} */
+
 .card-list .card-item {
   list-style: none;
 }
@@ -123,14 +120,7 @@ header nav a {
   color: white;
   background: black;
 }
-/* .card-list .card-link .badge.deux {
-  color: white;
-  background: black;
-}
-.card-list .card-link .badge.deux {
-  color: white;
-  background: black;
-} */
+
 .card-list .card-link .card-title {
   font-size: 1.19rem;
   color: black;
@@ -153,6 +143,129 @@ header nav a {
   background: #ffc107;
 }
 
+.innovation-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.innovation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.innovation-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.innovation-card h3 {
+  font-size: 1rem;
+  margin: 15px 0;
+  min-height: 60px;
+}
+/* Obligatoire */
+.mySwiper {
+  position: relative;
+}
+
+/* Flèches Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  left: -40px;
+}
+
+.swiper-button-next {
+  right: -40px;
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background: #0d6efd;
+}
+
 footer .foot-bg {
   background-color: #0d6efd;
+}
+
+/*================================ fichier html RECOMMANDATION NEWSLETTER SUBSCRIPTION SECTION =====================*/
+
+/* ======================================================= */
+/* 1. Styles Généraux de la Section */
+/* ======================================================= */
+
+#recommendations {
+  background-color: #f8f9fa; /* Couleur d'arrière-plan claire */
+}
+
+/* Styles pour les titres secondaires (span) */
+#recommendations span {
+  color: var(--bs-primary);
+  font-size: 10px;
+}
+
+/* ======================================================= */
+/* 2. Colonne 1 : Articles Recommandés */
+/* ======================================================= */
+
+.article-reco {
+  /* Ajoute un petit survol pour chaque article recommandé */
+  padding: 5px 0;
+  transition: background-color 0.3s ease;
+}
+.article-reco:hover {
+  background-color: rgba(13, 110, 253, 0.05); /* Légèrement bleu au survol */
+}
+
+.article-reco .article-title {
+  line-height: 1.3;
+}
+
+.hover-link-primary {
+  transition: color 0.3s ease;
+}
+.hover-link-primary:hover {
+  color: var(--bs-warning) !important;
+}
+
+/* ======================================================= */
+/* 3. Colonne 3 : Checklist Startups */
+/* ======================================================= */
+
+/* Créer deux colonnes pour la liste des liens (comme dans un magazine) */
+.link-list {
+  column-count: 2;
+  column-gap: 1.5rem; /* Espacement entre les colonnes */
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-list li {
+  padding-bottom: 5px;
+  break-inside: avoid; /* Évite qu'un élément soit coupé entre deux colonnes */
+}
+
+.hover-link-dark {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.hover-link-dark:hover {
+  color: var(--bs-primary) !important;
+  text-decoration: underline !important;
+}
+
+/* S'assurer que les colonnes ne s'affichent pas sur mobile (pour la lisibilité) */
+@media (max-width: 575.98px) {
+  .link-list {
+    column-count: 1;
+  }
 }
