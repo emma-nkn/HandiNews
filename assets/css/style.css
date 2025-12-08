@@ -165,7 +165,8 @@ header nav a {
 }
 
 .innovation-card h3 {
-  font-size: 1rem;
+  text-align: justify;
+  font-size: 0.9rem;
   margin: 15px 0;
   min-height: 60px;
 }
