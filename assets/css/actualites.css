@@ -1,0 +1,51 @@
+#title {
+  margin: 25px;
+  text-align: center;
+}
+#title span {
+  color: #ffc107;
+}
+#title h1 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 800;
+}
+#title .para_title {
+  margin: 0% 16%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#title .words_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.6rem;
+}
+#title .words_card .block_title {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #0d6efd;
+  border-radius: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+#title .words_card .block_title:hover {
+  background: white;
+  border: 1px solid white;
+  color: #0d6efd;
+}
+#article {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#article .article_block {
+  width: 70%;
+}
+.article_block .article_card img {
+  width: 400px;
+}
+#article .article_block {
+}
