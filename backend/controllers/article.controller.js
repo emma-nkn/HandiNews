@@ -1,0 +1,5 @@
+const articles = require("../database/data");
+
+exports.getArticles = (req, res) => {
+  res.status(200).json(articles);
+};
