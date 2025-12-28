@@ -180,5 +180,5 @@ Taille du texte ajustable
 
 ## 1️⃣ Cloner le projet
 
-git clone https://github.com/emma-nkn/HandiNews.git
+git clone https://github.com/frankl1n-dev/HandiNews.git
 cd HandiNews
