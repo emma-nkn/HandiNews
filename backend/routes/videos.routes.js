@@ -3,8 +3,8 @@ const router = express.Router();
 const videos = require("../database/videos");
 
 // GET toutes les vidéos
-router.get("/", (req, res) => {
-  res.json(videos);
+router.get("/innovation", (req, res) => {
+  res.render("innovation", { videos });
 });
 
 module.exports = router;

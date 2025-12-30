@@ -7,6 +7,7 @@ const videos = [
     youtubeId: "iQ6W_H76dGM",
     category: "Mobilité dans les transports",
     author: "Visit Paris Region",
+    date: "15/2/04/2023",
   },
 
   {
@@ -17,6 +18,7 @@ const videos = [
     youtubeId: "ZMDixV3f8hQ",
     category: "Éducation et Aidants",
     author: "JobinLive",
+    date: "15/2/04/2023",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const videos = [
     youtubeId: "6MxGuwKj2L8",
     category: "Accessibilité téléphonique et physique",
     author: "Elioz",
+    date: "15/2/04/2023",
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ const videos = [
     youtubeId: "2_nAIteM-1c",
     category: "Innovation collaborative",
     author: "FRANCE 24",
+    date: "15/2/04/2023",
   },
 ];
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <div data-include="components/head.html"></div>
+  <%- include('components/head.ejs') %>
   <body style="background-color: #c1e8ff; color: #190019">
     <!-- Header inclus -->
-    <div data-include="components/header.html"></div>
+    <%- include('components/header') %>
 
     <section id="explorer">
       <div class="card_imge">
@@ -74,8 +74,106 @@
       </div>
     </section>
 
+    <section id="videos_youtube">
+      <div class="left_bloc">
+        <div class="titre">
+          <div class="titre_bloc">
+            <div class="color-red"></div>
+            <h2>HandiTech</h2>
+          </div>
+          <div class="color-gris"></div>
+        </div>
+        <figure>
+          <img
+            src="assets/pictures/conf_handilab.jpg"
+            alt="image conférence HandiTech"
+          />
+        </figure>
+        <div class="description">
+          <div class="btn_bloc">
+            <button class="btn-un">Innovation</button>
+            <button class="btn-deux">HandiTech</button>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5>Accessibilité</h5>
+        </div>
+        <div class="description">
+          <button class="btn-deux">HandiTech</button>
+          <p>
+            Lorem ipsum consectetur adipis dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="middle_bloc">
+        <div class="titre">
+          <hr class="color-red" />
+          <h2>HandiTech dans le monde</h2>
+          <hr class="color-gris" />
+        </div>
+        <div id="video-affichage"></div>
+      </div>
+      <div class="right_bloc">
+        <!-- <div class="row" id="videos-container"></div> -->
+        <div class="row" id="videos-container">
+          <% videos.forEach(video => { %>
+          <div class="col-12 video-item" data-id="<%= video.youtubeId %>">
+            <div class="thumbnail">
+              <img
+                src="https://img.youtube.com/vi/<%= video.youtubeId %>/hqdefault.jpg"
+                alt="<%= video.title %>"
+              />
+              <span class="play-icon material-icons-outlined">
+                play_circle
+              </span>
+            </div>
+
+            <div class="video-meta">
+              <h6><%= video.title %></h6>
+              <div class="videao-detail">
+                <p class="author"><%= video.author %></p>
+                <p class="date"><%= video.date %></p>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </section>
+    <section class="technologies-assistance">
+      <div class="titre">
+        <div class="titre_bloc">
+          <div class="color-red"></div>
+          <h2>Technologies d'Assistance</h2>
+        </div>
+        <div class="color-gris"></div>
+      </div>
+
+      <div class="videos-card-ref slider">
+        <% videos.forEach(video => { %>
+        <div class="video-item-card" data-id="<%= video.youtubeId %>">
+          <div class="thumbnail">
+            <img
+              src="https://img.youtube.com/vi/<%= video.youtubeId %>/hqdefault.jpg"
+              alt="<%= video.title %>"
+            />
+            <span class="play-icon material-icons-outlined">play_circle</span>
+          </div>
+
+          <div class="video-meta">
+            <h6><%= video.title %></h6>
+            <div class="video-detail">
+              <p class="author"><%= video.author %></p>
+              <p class="date"><%= video.date %></p>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </section>
+
     <!-- Footer inclus -->
-    <div data-include="components/footer.html"></div>
+    <%- include('components/footer.ejs') %>
 
     <script src="assets/js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
