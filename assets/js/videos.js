@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  // 👉 Charger la première vidéo au chargement
+  //  Charge la première vidéo au chargement
   if (videoItems.length > 0) {
     loadVideo(videoItems[0].dataset.id);
   }
 
-  // 👉 Changer la vidéo au clic
+  // Change la vidéo au clic
   videoItems.forEach((item) => {
     item.addEventListener("click", () => {
       videoItems.forEach((v) => v.classList.remove("active"));

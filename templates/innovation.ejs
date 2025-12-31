@@ -143,14 +143,14 @@
     <section class="technologies-assistance">
       <div class="titre">
         <div class="titre_bloc">
-          <div class="color-red"></div>
-          <h2>Technologies d'Assistance</h2>
+          <div class="techcolor-red"></div>
+          <h2 class="techtitre">Technologies d'Assistance</h2>
         </div>
-        <div class="color-gris"></div>
+        <div class="techcolor-gris"></div>
       </div>
 
       <div class="videos-card-ref slider">
-        <% videos.forEach(video => { %>
+        <% techVideos.forEach(video => { %>
         <div class="video-item-card" data-id="<%= video.youtubeId %>">
           <div class="thumbnail">
             <img
@@ -162,9 +162,13 @@
 
           <div class="video-meta">
             <h6><%= video.title %></h6>
+            <p class="description"><%= video.description %></p>
             <div class="video-detail">
               <p class="author"><%= video.author %></p>
-              <p class="date"><%= video.date %></p>
+              <div class="detail-bloc">
+                <p class="date"><%= video.date %></p>
+                <p class="category"><%= video.category %></p>
+              </div>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ const videos = [
     youtubeId: "iQ6W_H76dGM",
     category: "Mobilité dans les transports",
     author: "Visit Paris Region",
-    date: "15/2/04/2023",
+    date: "10/04/2024",
   },
 
   {
@@ -18,7 +18,7 @@ const videos = [
     youtubeId: "ZMDixV3f8hQ",
     category: "Éducation et Aidants",
     author: "JobinLive",
-    date: "15/2/04/2023",
+    date: "15/04/2023",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const videos = [
     youtubeId: "6MxGuwKj2L8",
     category: "Accessibilité téléphonique et physique",
     author: "Elioz",
-    date: "15/2/04/2023",
+    date: "15/04/2023",
   },
   {
     id: 4,
@@ -38,8 +38,44 @@ const videos = [
     youtubeId: "2_nAIteM-1c",
     category: "Innovation collaborative",
     author: "FRANCE 24",
-    date: "15/2/04/2023",
+    date: "15/04/2023",
   },
 ];
 
-module.exports = videos;
+const techVideos = [
+  {
+    id: 1,
+    title: "Wandercraft (Exosquelette de marche)",
+    description:
+      "Présentation d'Atalante, un exosquelette auto-équilibré qui permet aux personnes paraplégiques de remarcher de manière autonome sans béquilles.",
+    youtubeId: "4C0kF9GeXJg",
+    category: "Temoignage",
+    author: "JobinLive",
+    date: "17/11/2025",
+  },
+  {
+    id: 2,
+    title: "Scewo (Fauteuil roulant grimpeur d'escaliers)",
+    description:
+      "Présentation du Scewo Bro, un fauteuil roulant électrique capable de monter et descendre des escaliers en toute sécurité.",
+    youtubeId: "Y60WoiGETxI",
+    category: "Innovation",
+    author: "The Wall Street Journal",
+    date: "02/12/2023",
+  },
+  {
+    id: 3,
+    title: "Xander (Lunettes avec sous-titres en direct)",
+    description:
+      "Lunettes de réalité augmentée qui affichent en temps réel ce que disent les interlocuteurs pour les personnes malentendantes.",
+    youtubeId: "HOB280OaAEo",
+    category: "Innovation",
+    author: "The Wall Street Journal",
+    date: "02/12/2023",
+  },
+];
+
+module.exports = {
+  videos,
+  techVideos,
+};

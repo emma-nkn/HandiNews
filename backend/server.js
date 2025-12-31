@@ -21,12 +21,12 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { title: "Accueil - HandiNews" });
 });
 
-app.get("/innovation", (req, res) => {
+/* app.get("/innovation", (req, res) => {
   res.render("innovation.ejs", {
     title: "Innovations - HandiTech",
     videos: videos,
   });
-});
+}); */
 
 app.get("/actualites", (req, res) => {
   res.render("actualites.ejs", { title: "Actualités" });
