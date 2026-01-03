@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <div data-include="components/head.html"></div>
+  <%- include('components/head.ejs') %>
   <body style="background-color: #c1e8ff; color: #190019">
     <!-- Header inclus -->
-    <div data-include="components/header.html"></div>
+    <%- include('components/header') %>
 
     <section id="title">
       <h1>Toutes l'actualités <span>Handitech</span></h1>
@@ -192,9 +192,32 @@
         </div>
       </div>
     </section>
+    <section class="cal-action">
+      <div class="blob-container position-relative">
+        <svg
+          class="blob-bg"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#0F82FE"
+            d="M29.9,-32.7C42.5,-32,59.1,-28.3,68.6,-17.8C78.1,-7.4,80.6,9.8,73.5,21.5C66.4,33.1,49.6,39.2,35.8,49.4C21.9,59.6,11,73.9,1.5,71.9C-8,69.9,-16,51.5,-31.4,41.8C-46.8,32.1,-69.4,31,-74.1,22.7C-78.8,14.3,-65.4,-1.3,-59,-18.6C-52.6,-35.9,-53.2,-54.9,-44.5,-56.9C-35.8,-58.8,-17.9,-43.7,-4.6,-37.3C8.7,-30.9,17.3,-33.3,29.9,-32.7Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+        <img src="assets/pictures/tel_ecran.png" alt="" />
+      </div>
+      <form action="" class="champ">
+        <div class="champ-form">
+          <label for="">Recevez toute l'actualité</label>
+          <input type="mail" placeholder="Votre mail" required />
+        </div>
+        <button type="submit">S'abonner</button>
+      </form>
+    </section>
 
     <!-- Footer inclus -->
-    <div data-include="components/footer.html"></div>
+    <%- include('components/footer.ejs') %>
 
     <script src="assets/js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

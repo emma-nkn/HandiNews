@@ -182,7 +182,7 @@
 #videos_youtube .left_bloc img {
   width: 240px;
 }
-/* ===================================== */
+/* ============== ============ */
 .left_bloc .description {
   padding: 10px 5px;
   margin: 10px 0px;
@@ -343,7 +343,7 @@
 
 .video-item-card {
   /* flex: 0 0 auto; empêche le retour à la ligne */
-  width: 360px;
+  width: 355px;
   height: 470px;
 
   background: #ffffff;
@@ -363,7 +363,7 @@
 .video-item-card .thumbnail img {
   width: 100%;
   height: 200px;
-  margin-left: 20%;
+  /* margin-left: 20%; */
 }
 .video-item-card .video-meta {
   margin: 20px 0px;
@@ -374,7 +374,7 @@
   font-weight: 600;
 }
 .video-item-card .video-meta .description {
-  width: 320px;
+  /* width: 320px; */
   color: #c7bbbb;
   font-size: 14px;
   font-style: italic;
@@ -400,3 +400,92 @@
 /*  section technologies-assistance */
 
 /*  section technologies-assistance */
+
+/* Dernière  section partenaires */
+#partenaires {
+  padding: 3rem 0;
+  background-color: #fcfcfd;
+  color: #070707;
+  overflow: hidden;
+}
+
+/* Titre qui défile */
+.titre-defil {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 4rem;
+}
+
+.titre-defil h2 {
+  display: inline-block;
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #0d6efd;
+  animation: defilement 20s linear infinite;
+}
+
+/* Animation droite → gauche */
+@keyframes defilement {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.contenant-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 0 5%;
+}
+.carousel-container {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo-partenaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out; /* Animation fluide */
+  animation: scroll-infinit 20s linear infinite;
+}
+
+.logo-partenaire figure {
+  margin: 0;
+  flex: 0 0 150px; /* Largeur fixe pour chaque logo */
+}
+
+.logo-partenaire img {
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+  display: block;
+}
+/* Animation qui décale de la moitié de la largeur totale */
+@keyframes scroll-infinit {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause au survol pour laisser l'utilisateur regarder un logo */
+.carousel-container:hover .logo-partenaire {
+  animation-play-state: paused;
+}
+
+/* Dernière  section partenaires */

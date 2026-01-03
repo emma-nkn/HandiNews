@@ -19,3 +19,9 @@ const swiper = new Swiper(".mySwiper", {
     992: { slidesPerView: 3 },
   },
 });
+
+const carousel = document.querySelector(".logo-partenaire");
+
+// récupère le contenu actuel tous les <figure> et le duplique
+const content = carousel.innerHTML;
+carousel.innerHTML += content;

@@ -7,7 +7,7 @@
 
     <section id="explorer">
       <div class="card_imge">
-        <figure><img src="assets/pictures/HandiNews.png" alt="" /></figure>
+        <figure><img src="assets/pictures/rowsing.png" alt="" /></figure>
       </div>
       <div class="card_texte">
         <h2>L'<span>innovation</span> au Service de l'inclusion</h2>
@@ -140,6 +140,7 @@
         </div>
       </div>
     </section>
+
     <section class="technologies-assistance">
       <div class="titre">
         <div class="titre_bloc">
@@ -176,10 +177,99 @@
       </div>
     </section>
 
+    <section class="technologies-assistance">
+      <div class="titre">
+        <div class="titre_bloc">
+          <div class="techcolor-red"></div>
+          <h2 class="techtitre">Accessibilité Numérique</h2>
+        </div>
+        <div class="techcolor-gris"></div>
+      </div>
+
+      <div class="videos-card-ref slider">
+        <% techVideos.forEach(video => { %>
+        <div class="video-item-card" data-id="<%= video.youtubeId %>">
+          <div class="thumbnail">
+            <img
+              src="https://img.youtube.com/vi/<%= video.youtubeId %>/hqdefault.jpg"
+              alt="<%= video.title %>"
+            />
+            <span class="play-icon material-icons-outlined">play_circle</span>
+          </div>
+
+          <div class="video-meta">
+            <h6><%= video.title %></h6>
+            <p class="description"><%= video.description %></p>
+            <div class="video-detail">
+              <p class="author"><%= video.author %></p>
+              <div class="detail-bloc">
+                <p class="date"><%= video.date %></p>
+                <p class="category"><%= video.category %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </section>
+
+    <section id="partenaires">
+      <div class="titre-defil">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      </div>
+      <div class="contenant-flex">
+        <div class="carousel-container">
+          <div class="logo-partenaire">
+            <figure>
+              <img
+                src="assets/pictures/d-logo-E01n.jpg"
+                alt="Logo entreprise"
+              />
+            </figure>
+            <figure>
+              <img
+                src="assets/pictures/d-logo-E04n.jpg"
+                alt="Logo entreprise"
+              />
+            </figure>
+            <figure>
+              <img
+                src="assets/pictures/d-logo-E02n.jpg"
+                alt="Logo entreprise"
+              />
+            </figure>
+
+            <figure>
+              <img
+                src="assets/pictures/d-logo-E03n.jpg"
+                alt="Logo entreprise"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="hand-texte">
+          <h1 class="h3 m-0">
+            <a
+              href="templates/index.ejs"
+              class="text-white text-decoration-none"
+            >
+              Handi<strong class="fw-bold">News</strong>
+            </a>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in alias
+            minima.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer inclus -->
     <%- include('components/footer.ejs') %>
 
+    <script src="assets/js/videos.js"></script>
     <script src="assets/js/include.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 
