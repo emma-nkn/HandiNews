@@ -45,9 +45,9 @@ const videos = [
 const techVideos = [
   {
     id: 1,
-    title: "Wandercraft (Exosquelette de marche)",
+    title: "Wandercraft (Exosquelette de marche aux paraplégiques)",
     description:
-      "Présentation d'Atalante, un exosquelette auto-équilibré qui permet aux personnes paraplégiques de remarcher de manière autonome sans béquilles.",
+      "Présentation d'Atalante, un exosquelette auto-équilibré qui permet aux paraplégiques de remarcher de manière autonome sans béquilles.",
     youtubeId: "4C0kF9GeXJg",
     category: "Temoignage",
     author: "JobinLive",
@@ -74,8 +74,41 @@ const techVideos = [
     date: "02/12/2023",
   },
 ];
+const accesVideos = [
+  {
+    id: 1,
+    title: "Accessibilité numérique, la démarche d'Arkema",
+    description:
+      "Arkema, dans le cadre de son 3e accord en faveur de l’emploi des personnes handicapées, s’est engagé dans une démarche d’accessibilité numérique.",
+    youtubeId: "KPKh_Yv0mvY",
+    category: "Accèssibilité web",
+    author: "Société Altalan",
+    date: "01/02/2027",
+  },
+  {
+    id: 2,
+    title: "Que peut la tech pour l’accessibilité (numérique)",
+    description:
+      "le numérique peut toutefois aussi être un facteur d’exclusion très fort pour les personnes handicapées.",
+    youtubeId: "lTfo_tzItzk",
+    category: "Accèssibilité web",
+    author: "Microsoft France",
+    date: "18/05/2023",
+  },
+  {
+    id: 3,
+    title: "L'accessibilité numérique en formation",
+    description:
+      "comment initier une démarche d'accessibilité numérique dans les projets de formation (plateforme de formation et contenus). ",
+    youtubeId: "ILe1wFaeIs8",
+    category: "Accèssibilité web",
+    author: "1001 Parcours",
+    date: "01/02/2024",
+  },
+];
 
 module.exports = {
   videos,
   techVideos,
+  accesVideos,
 };

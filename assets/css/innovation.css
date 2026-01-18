@@ -146,7 +146,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 #videos_youtube .left_bloc {
 }
@@ -224,6 +224,28 @@
   font-size: 16px;
   color: #0d6efd;
 }
+/*=============*/
+#videos_youtube .middle_bloc {
+  width: 35%;
+  height: 100%;
+}
+.middle_bloc .titre .color-red {
+  width: 100%;
+  border: 1px solid #23058f;
+  background-color: #0d6efd;
+}
+.middle_bloc .titre h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  padding: 10px 0px;
+  font-weight: 600;
+  color: #0d6efd;
+}
+.middle_bloc #video-affichage {
+  width: 100%;
+  height: 100%;
+}
+/*=============*/
 #videos_youtube #videos-container {
   width: 380px;
 }
@@ -245,7 +267,7 @@
 }
 
 .thumbnail {
-  width: 250px;
+  /* width: 250px; */
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -342,12 +364,11 @@
 }
 
 .video-item-card {
-  /* flex: 0 0 auto; empêche le retour à la ligne */
   width: 355px;
   height: 470px;
 
   background: #ffffff;
-  border-radius: 14px;
+  border-radius: 4px;
   padding: 10px 20px;
 
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
@@ -402,90 +423,50 @@
 /*  section technologies-assistance */
 
 /* Dernière  section partenaires */
-#partenaires {
-  padding: 3rem 0;
+#decouverte {
+  text-align: center;
+  width: 100%;
+  height: 320px;
   background-color: #fcfcfd;
   color: #070707;
   overflow: hidden;
 }
-
-/* Titre qui défile */
-.titre-defil {
+#decouverte h2 {
+  margin-top: 4%;
+  font-size: 30px;
+  font-weight: 600;
+}
+#decouverte p {
+  padding: 5px 0px;
+  font-size: 25px;
+  color: #adb2bb;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.search-form {
   width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-bottom: 4rem;
-}
-
-.titre-defil h2 {
-  display: inline-block;
-  font-family: "Anton", sans-serif;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #0d6efd;
-  animation: defilement 20s linear infinite;
-}
-
-/* Animation droite → gauche */
-@keyframes defilement {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.contenant-flex {
+  background-color: #0d6efd;
+  padding: 2px;
+  border-radius: 5px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  padding: 0 5%;
-}
-.carousel-container {
-  width: 50%;
-  overflow: hidden;
-  white-space: nowrap;
-  background: white;
-  padding: 20px 0;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
   position: relative;
 }
 
-.logo-partenaire {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  transition: transform 0.5s ease-in-out; /* Animation fluide */
-  animation: scroll-infinit 20s linear infinite;
+.search-form input {
+  width: 800px;
+  padding: 5px;
+  /* border-radius: 50px; */
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
-
-.logo-partenaire figure {
-  margin: 0;
-  flex: 0 0 150px; /* Largeur fixe pour chaque logo */
-}
-
-.logo-partenaire img {
-  width: 100%;
-  border-radius: 50%;
-  height: auto;
-  display: block;
-}
-/* Animation qui décale de la moitié de la largeur totale */
-@keyframes scroll-infinit {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* Pause au survol pour laisser l'utilisateur regarder un logo */
-.carousel-container:hover .logo-partenaire {
-  animation-play-state: paused;
+.search-form span {
+  font-size: 40px;
+  color: #fcfcfd;
+  cursor: pointer;
 }
 
 /* Dernière  section partenaires */

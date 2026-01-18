@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('components/head.ejs') %>
+  <body>
+    <%- include('components/header') %>
+
+    <section id="hero">
+      <h1>Nous contacter</h1>
+      <p>Prenez rendez-vous</p>
+    </section>
+    <section class="bloc_contact">
+      <div class="bloc_img">
+        <figure>
+          <img src="assets/pictures/conf_01.jpg" alt="photo handicapé moteur" />
+        </figure>
+      </div>
+      <div class="formulaire">
+        <h2>Une question ?Notre équipe vous répond sous 24h</h2>
+        <div>
+          <p><strong>E-mail:</strong>handiinfo@gmail.com</p>
+          <p><strong>Tél:</strong>+33 6 22 23 00 80</p>
+          <p><strong>Adresse:</strong>25 rue handiNews</p>
+        </div>
+        <p>Paris, ile-de-france / France</p>
+        <button>Nos réseaux sociaux</button>
+
+        <div
+          class="col-auto d-flex justify-content-center mx-auto mx-md-0 gap-3 fs-4"
+        >
+          <a href="#" class="text-warning hover-social"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#" class="text-warning hover-social"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" class="text-warning hover-social"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="#" class="text-warning hover-social"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <div class="col-md-8 p-4 p-md-5 bg-white">
+          <form action="#" id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nom"
+                    placeholder="Votre nom"
+                    required
+                  />
+                  <label for="nom">Nom complet</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="mail"
+                    placeholder="nom@exemple.com"
+                    required
+                  />
+                  <label for="mail">Adresse e-mail</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-floating mb-3">
+                  <select
+                    class="form-select"
+                    id="pays"
+                    aria-label="Sélectionnez votre pays"
+                  >
+                    <option selected value="France">France</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                  <label for="pays">Pays de résidence</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-floating mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="Votre message"
+                    id="message"
+                    style="height: 150px"
+                    required
+                  ></textarea>
+                  <label for="message">Votre message</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-warning btn-lg w-100 fw-bold text-primary shadow-sm py-3 mt-2"
+                >
+                  Envoyer le message <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

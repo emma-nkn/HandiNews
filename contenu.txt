@@ -53,3 +53,5 @@ Le web de demain sera inclusif ou ne sera pas. Nous explorons l'IA générative,
 
 Urbanisme Inclusif
 Comment la Smart City s'adapte-t-elle au handicap ? Étude des solutions de guidage GPS haute précision et des aménagements urbains intelligents.
+
+position: inerit !important

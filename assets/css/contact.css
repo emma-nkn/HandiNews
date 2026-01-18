@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+#hero {
+  width: 100%;
+  background-image: url(assets/pictures/conf_handilab.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ {
+}
