@@ -81,7 +81,7 @@ const accesVideos = [
     description:
       "Arkema, dans le cadre de son 3e accord en faveur de l’emploi des personnes handicapées, s’est engagé dans une démarche d’accessibilité numérique.",
     youtubeId: "KPKh_Yv0mvY",
-    category: "Accèssibilité web",
+    category: "web",
     author: "Société Altalan",
     date: "01/02/2027",
   },
@@ -91,7 +91,7 @@ const accesVideos = [
     description:
       "le numérique peut toutefois aussi être un facteur d’exclusion très fort pour les personnes handicapées.",
     youtubeId: "lTfo_tzItzk",
-    category: "Accèssibilité web",
+    category: "web",
     author: "Microsoft France",
     date: "18/05/2023",
   },
@@ -101,7 +101,7 @@ const accesVideos = [
     description:
       "comment initier une démarche d'accessibilité numérique dans les projets de formation (plateforme de formation et contenus). ",
     youtubeId: "ILe1wFaeIs8",
-    category: "Accèssibilité web",
+    category: "web",
     author: "1001 Parcours",
     date: "01/02/2024",
   },

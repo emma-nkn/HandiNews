@@ -23,8 +23,7 @@
 }
 
 /*=====================Coté droit texte de la session================================*/
-#explorer #block_categories {
-}
+
 #explorer .card_texte span {
   color: #ffc107;
 }
@@ -47,8 +46,7 @@
   border-radius: 8px;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
-#block_categories .categories .bg_bloc {
-}
+
 .categories .bg_bloc p:nth-of-type(1) {
   font-size: 1rem;
   font-weight: 800;
@@ -147,8 +145,6 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-#videos_youtube .left_bloc {
 }
 #videos_youtube .left_bloc .titre {
   display: flex;
@@ -353,8 +349,7 @@
   border: 1px solid #fcfcfd;
   background-color: #ece7ff;
 }
-.technologies-assistance .titre {
-}
+
 .videos-card-ref {
   margin-top: 3%;
   display: flex;
@@ -364,7 +359,7 @@
 }
 
 .video-item-card {
-  width: 355px;
+  width: 365px;
   height: 470px;
 
   background: #ffffff;
@@ -395,7 +390,7 @@
   font-weight: 600;
 }
 .video-item-card .video-meta .description {
-  /* width: 320px; */
+  width: auto;
   color: #c7bbbb;
   font-size: 14px;
   font-style: italic;

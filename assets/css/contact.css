@@ -4,10 +4,21 @@
   box-shadow: border-box;
 }
 #hero {
-  width: 100%;
-  background-image: url(assets/pictures/conf_handilab.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 3% 30%;
+  border: 2px solid red;
 }
- {
+.bloc_contact {
+  margin: 0px 80px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.bloc_contact .bloc_img img {
+  width: 500px;
+}
+.bloc_contact .bg-white {
+  border: 2px solid red;
+  width: 100%;
 }
